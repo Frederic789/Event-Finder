@@ -1,4 +1,4 @@
-# Local Event Finder
+# Capstone Project-Event Finder
 
 ## Description
 
