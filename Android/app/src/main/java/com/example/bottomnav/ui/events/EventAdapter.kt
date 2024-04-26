@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.bottomnav.R
+import com.example.bottomnav.R.id.*
 
 
 class EventAdapter(private val events: List<EventItem>) : RecyclerView.Adapter<EventAdapter.ViewHolder>() {
