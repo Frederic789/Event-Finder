@@ -7,19 +7,21 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.bottomnav.ui.home.HomeFragment"
+        android:name="com.example.bottomnav.ui.events.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
+    <!-- Assume you have a SearchFragment and fragment_search.xml layout -->
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.bottomnav.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_search"
+        android:name="com.example.bottomnav.ui.search.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search" />
 
+    <!-- Assume you have an AddEventFragment and fragment_add_event.xml layout -->
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.bottomnav.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_add_event"
+        android:name="com.example.bottomnav.ui.addevent.AddEventFragment"
+        android:label="@string/title_add_event"
+        tools:layout="@layout/fragment_add_event" />
 </navigation>

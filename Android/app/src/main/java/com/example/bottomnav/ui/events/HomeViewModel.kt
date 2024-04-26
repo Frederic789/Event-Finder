@@ -1,4 +1,4 @@
-package com.example.bottomnav.ui.home
+package com.example.bottomnav.ui.events
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
