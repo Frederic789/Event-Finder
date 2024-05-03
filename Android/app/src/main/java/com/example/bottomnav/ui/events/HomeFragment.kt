@@ -20,12 +20,12 @@ class HomeFragment : Fragment() {
     private lateinit var eventAdapter: EventAdapter
 
     override fun onCreateView(
-            inflater: LayoutInflater,
-            container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
         homeViewModel =
-                ViewModelProvider(this).get(HomeViewModel::class.java)
+            ViewModelProvider(this).get(HomeViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_home, container, false)
 
         homeViewModel.text.observe(viewLifecycleOwner, Observer {
@@ -50,9 +50,10 @@ class HomeFragment : Fragment() {
     private fun getEventsList(): List<EventItem> {
         // This is where you would retrieve or generate your list of events
         return listOf(
-                EventItem("Event 1", "Date 1", "Location 1"),
-                EventItem("Event 2", "Date 2", "Location 2")
-                // ... more events
+            EventItem("Event 1", "Date 1", "Location 1"),
+            EventItem("Event 2", "Date 2", "Location 2"),
+            EventItem ("Event 3", "Date 3", "Location 3")
         )
     }
+
 }

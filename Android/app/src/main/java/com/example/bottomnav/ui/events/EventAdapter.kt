@@ -4,6 +4,7 @@ package com.example.bottomnav.ui.events
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.bottomnav.R
@@ -16,11 +17,18 @@ class EventAdapter(private val events: List<EventItem>) : RecyclerView.Adapter<E
         val titleTextView: TextView = view.findViewById(R.id.titleTextView)
         val dateTextView: TextView = view.findViewById(R.id.dateTextView)
         val locationTextView: TextView = view.findViewById(R.id.locationTextView)
+        val viewDetailsButton: Button = view.findViewById(R.id.viewDetailsButton)
 
         fun bind(event: EventItem) {
             titleTextView.text = event.title
             dateTextView.text = event.date
             locationTextView.text = event.location
+        }
+
+        init {
+            viewDetailsButton.setOnClickListener {
+                // Handle click event
+            }
         }
     }
 
