@@ -14,14 +14,14 @@
     <!-- Assume you have a SearchFragment and fragment_search.xml layout -->
     <fragment
         android:id="@+id/navigation_search"
-        android:name="com.example.bottomnav.ui.search.SearchFragment"
+        android:name="com.example.bottomnav.SearchFragment"
         android:label="@string/title_search"
         tools:layout="@layout/fragment_search" />
 
     <!-- Assume you have an AddEventFragment and fragment_add_event.xml layout -->
     <fragment
         android:id="@+id/navigation_add_event"
-        android:name="com.example.bottomnav.ui.addevent.AddEventFragment"
+        android:name="com.example.bottomnav.ui.events.SecondScreenAddEvent"
         android:label="@string/title_add_event"
         tools:layout="@layout/fragment_add_event" />
 </navigation>
