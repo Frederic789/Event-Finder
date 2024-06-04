@@ -4,6 +4,9 @@ package com.example.bottomnav.ui.events
 data class EventItem(
     val title: String,
     val date: String,
-    val location: String
+    val location: String,
+    val locationLatitude: Double,
+    val locationLongitude: Double,
+    var distanceFromUser: Float = 0f // Default to 0, update later
 )
 

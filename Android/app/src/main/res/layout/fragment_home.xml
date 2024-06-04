@@ -3,7 +3,31 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <!-- Toolbar layout with Profile Icon and Search Bar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_account_circle_24"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/profile_icon_description"/>
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/profileIcon"
+            android:iconifiedByDefault="false"
+            android:queryHint="@string/search_garage_sale_nearby"/>
+    </RelativeLayout>
+
 
     <!-- Title for Local Events -->
     <TextView

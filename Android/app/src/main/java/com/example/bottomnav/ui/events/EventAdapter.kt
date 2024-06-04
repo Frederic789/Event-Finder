@@ -11,7 +11,7 @@ import com.example.bottomnav.R
 import com.example.bottomnav.R.id.*
 
 
-class EventAdapter(private val events: List<EventItem>) : RecyclerView.Adapter<EventAdapter.ViewHolder>() {
+class EventAdapter(var events: List<EventItem>) : RecyclerView.Adapter<EventAdapter.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val titleTextView: TextView = view.findViewById(R.id.titleTextView)
@@ -38,8 +38,13 @@ class EventAdapter(private val events: List<EventItem>) : RecyclerView.Adapter<E
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bind(events[position])
+        var event = events[position]
+        holder.titleTextView.text = event.title
+        holder.dateTextView.text = event.date
+        holder.locationTextView.text = "${event.location}, ${event.distanceFromUser} meters away"
     }
+
+
 
     override fun getItemCount(): Int {
         return events.size
