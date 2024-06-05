@@ -7,4 +7,6 @@
     <string name="search_hint">Search here...</string>
     <string name="profile_icon_description">Profile Icon</string>
     <string name="search_garage_sale_nearby">Search garage sale nearby</string>
+    <string name="upload_image" />
+    <string name="upload_image_description" />
 </resources>
