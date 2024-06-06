@@ -5,6 +5,23 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <queries>
+        <!-- Camera -->
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+
+        <!-- Gallery -->
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT" />
+        </intent>
+    </queries>
+
+
+
 
     <application
         android:allowBackup="true"
@@ -15,7 +32,7 @@
         android:theme="@style/Theme.BottomNav">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name">
+            android:label="Garage Sale Finder">
 
 
             <intent-filter>
@@ -29,9 +46,13 @@
             </intent-filter>
         </activity>
 
+
         <activity
             android:name=".ui.events.EventTitleActivity"
             android:label="Event Title" />
+        <activity
+            android:name=".ui.events.SecondScreenAddEvent"
+            android:label="Add Event" />
     </application>
 
 </manifest>

@@ -47,6 +47,7 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui-ktx:2.2.2'
     // Google Play services location library
     implementation 'com.google.android.gms:play-services-location:18.0.0'
+    implementation 'org.jsoup:jsoup:1.14.1'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
     testImplementation 'junit:junit:4.+'
